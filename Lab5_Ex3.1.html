@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website hiển thị infographic thống kê và video YouTube tuyệt vời. Trang web responsive với thiết kế hiện đại và hấp dẫn.">
+    <meta name="author" content="Tác giả Website">
+    <meta name="keywords" content="infographic, video youtube, thống kê, dữ liệu">
+    <title>Infographic & Video YouTube - Thống kê & Hướng dẫn Video</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            margin-bottom: 50px;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .infographic-section,
+        .video-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .infographic-section:hover,
+        .video-section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .section-title {
+            font-size: 1.8em;
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .infographic-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .description {
+            font-size: 1em;
+            color: #555;
+            line-height: 1.6;
+            margin-top: 15px;
+        }
+
+        .video-info {
+            background: #f0f0f0;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            .section-title {
+                font-size: 1.4em;
+            }
+        }
+
+        .header-section {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
+
+        .header-section h1 {
+            margin-bottom: 15px;
+            font-size: 2.8em;
+        }
+
+        .header-description {
+            font-size: 1.1em;
+            color: rgba(255, 255, 255, 0.95);
+            line-height: 1.8;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .copyright {
+            font-size: 0.9em;
+            color: rgba(255, 255, 255, 0.8);
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            line-height: 1.6;
+        }
+
+        .copyright strong {
+            color: white;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px solid rgba(255, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Phần Header với Tiêu đề và Mô tả -->
+        <div class="header-section">
+            <h1>📊 Infographic & Video Tuyệt Vời</h1>
+            <p class="header-description">
+                Chào mừng đến với trang web hiển thị infographic và video YouTube. 
+                Trang web này cung cấp một giao diện trực quan và dễ sử dụng để xem dữ liệu thống kê 
+                dưới dạng infographic cùng với các video hướng dẫn từ YouTube. 
+                Thiết kế responsive đảm bảo trang web hoạt động tốt trên tất cả các thiết bị.
+            </p>
+        </div>
+
+        <div class="content-wrapper">
+            <!-- Phần Infographic -->
+            <div class="infographic-section">
+                <h2 class="section-title">📈 Infographic</h2>
+                <img src="infographic.png" alt="Infographic thống kê">
+                <p class="description">
+                    Đây là hình ảnh infographic hiển thị dữ liệu thống kê và thông tin quan trọng. 
+                    Bạn có thể thay thế "infographic.png" bằng đường dẫn đến ảnh infographic của bạn.
+                </p>
+            </div>
+
+            <!-- Phần Video YouTube -->
+            <div class="video-section">
+                <h2 class="section-title">🎬 Video YouTube</h2>
+                <div class="video-container">
+                    <!-- Thay thế VIDEO_ID bằng ID của video YouTube bạn muốn nhúng -->
+                    <iframe 
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                        allowfullscreen="" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+                <div class="video-info">
+                    <strong>💡 Hướng dẫn:</strong> Thay đổi ID video YouTube (dQw4w9WgXcQ) bằng ID video của bạn.
+                </div>z
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Website Hiển thị Infographic & Video</p>
+            <div class="copyright">
+                <strong>Ghi chú Bản quyền:</strong><br>
+                Tất cả nội dung trên trang web này bao gồm các hình ảnh infographic và video được bảo vệ bởi bản quyền. 
+                Vui lòng không sao chép, phân phối hoặc sử dụng bất kỳ nội dung nào mà không có sự cho phép. 
+                Các video YouTube được nhúng từ YouTube.com và tuân theo điều khoản dịch vụ của YouTube.<br><br>
+                <strong>Liên hệ:</strong> Nếu có bất kỳ câu hỏi nào về bản quyền hoặc sử dụng nội dung, 
+                vui lòng liên hệ với chúng tôi qua email hoặc biểu mẫu liên hệ.
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
